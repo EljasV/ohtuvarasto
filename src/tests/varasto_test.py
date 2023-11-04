@@ -61,7 +61,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_ota_liikaa(self):
         self.varasto.ota_varastosta(100)
-        self.assertAlmostEqual(self.varasto.saldo, 0)
+        self.assertAlmostEqual(self.varasto.saldo, 10)
 
 
     def test_oikein_formatoitu(self):
